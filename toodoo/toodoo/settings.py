@@ -39,14 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_filters',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
     'todo',
 ]
-REST_FRAMEWORK={
-    'DEFAULT_FILTER_BACKENDS':[
-        'django_filters.rest_framework.DjangoFilterBackend',
-        "rest_framework.filters.SearchFilter"
-    ]
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
